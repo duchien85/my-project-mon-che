@@ -1,0 +1,1249 @@
+
+CaroContent1.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+board
+  rotate: false
+  xy: 2, 2
+  size: 432, 432
+  orig: 432, 432
+  offset: 0, 0
+  index: -1
+backgroundInGame
+  rotate: false
+  xy: 436, 2
+  size: 320, 240
+  orig: 320, 240
+  offset: 0, 0
+  index: -1
+background
+  rotate: false
+  xy: 2, 436
+  size: 320, 240
+  orig: 320, 240
+  offset: 0, 0
+  index: -1
+chatBg
+  rotate: false
+  xy: 758, 2
+  size: 248, 240
+  orig: 248, 240
+  offset: 0, 0
+  index: -1
+khungBanChoi
+  rotate: false
+  xy: 2, 678
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+leftBg
+  rotate: false
+  xy: 324, 436
+  size: 80, 240
+  orig: 80, 240
+  offset: 0, 0
+  index: -1
+menuBody
+  rotate: false
+  xy: 436, 244
+  size: 62, 180
+  orig: 62, 180
+  offset: 0, 0
+  index: -1
+dialogBg
+  rotate: false
+  xy: 406, 436
+  size: 266, 168
+  orig: 266, 168
+  offset: 0, 0
+  index: -1
+win
+  rotate: false
+  xy: 674, 436
+  size: 320, 150
+  orig: 320, 150
+  offset: 0, 0
+  index: -1
+waitOpponent
+  rotate: false
+  xy: 500, 244
+  size: 182, 102
+  orig: 182, 102
+  offset: 0, 0
+  index: -1
+avatarIngame
+  rotate: false
+  xy: 684, 244
+  size: 59, 98
+  orig: 59, 98
+  offset: 0, 0
+  index: -1
+waitOpponentReady
+  rotate: false
+  xy: 758, 244
+  size: 210, 94
+  orig: 210, 94
+  offset: 0, 0
+  index: -1
+avatarLobby
+  rotate: false
+  xy: 758, 340
+  size: 87, 91
+  orig: 87, 91
+  offset: 0, 0
+  index: -1
+bet1003
+  rotate: false
+  xy: 500, 348
+  size: 55, 77
+  orig: 55, 77
+  offset: 0, 0
+  index: -1
+bet1002
+  rotate: false
+  xy: 557, 348
+  size: 55, 77
+  orig: 55, 77
+  offset: 0, 0
+  index: -1
+bet1001
+  rotate: false
+  xy: 614, 348
+  size: 55, 77
+  orig: 55, 77
+  offset: 0, 0
+  index: -1
+bet1G3
+  rotate: false
+  xy: 671, 348
+  size: 64, 74
+  orig: 64, 74
+  offset: 0, 0
+  index: -1
+bet1G2
+  rotate: false
+  xy: 847, 340
+  size: 64, 74
+  orig: 64, 74
+  offset: 0, 0
+  index: -1
+bet1G1
+  rotate: false
+  xy: 913, 340
+  size: 64, 74
+  orig: 64, 74
+  offset: 0, 0
+  index: -1
+bet10G3
+  rotate: false
+  xy: 244, 678
+  size: 65, 70
+  orig: 65, 70
+  offset: 0, 0
+  index: -1
+bet10G2
+  rotate: false
+  xy: 244, 750
+  size: 65, 70
+  orig: 65, 70
+  offset: 0, 0
+  index: -1
+bet10G1
+  rotate: false
+  xy: 244, 822
+  size: 65, 70
+  orig: 65, 70
+  offset: 0, 0
+  index: -1
+bet50003
+  rotate: false
+  xy: 2, 920
+  size: 55, 65
+  orig: 55, 65
+  offset: 0, 0
+  index: -1
+bet50002
+  rotate: false
+  xy: 59, 920
+  size: 55, 65
+  orig: 55, 65
+  offset: 0, 0
+  index: -1
+bet50001
+  rotate: false
+  xy: 116, 920
+  size: 55, 65
+  orig: 55, 65
+  offset: 0, 0
+  index: -1
+bet5003
+  rotate: false
+  xy: 173, 920
+  size: 65, 64
+  orig: 65, 64
+  offset: 0, 0
+  index: -1
+bet5002
+  rotate: false
+  xy: 240, 920
+  size: 65, 64
+  orig: 65, 64
+  offset: 0, 0
+  index: -1
+bet5001
+  rotate: false
+  xy: 324, 678
+  size: 65, 64
+  orig: 65, 64
+  offset: 0, 0
+  index: -1
+chon
+  rotate: false
+  xy: 324, 744
+  size: 60, 62
+  orig: 60, 62
+  offset: 0, 0
+  index: -1
+ready
+  rotate: false
+  xy: 406, 606
+  size: 203, 55
+  orig: 203, 55
+  offset: 0, 0
+  index: -1
+readyDown
+  rotate: false
+  xy: 406, 663
+  size: 203, 54
+  orig: 203, 54
+  offset: 0, 0
+  index: -1
+soundDown
+  rotate: false
+  xy: 970, 244
+  size: 52, 52
+  orig: 52, 52
+  offset: 0, 0
+  index: -1
+sound
+  rotate: false
+  xy: 324, 808
+  size: 52, 52
+  orig: 52, 52
+  offset: 0, 0
+  index: -1
+musicDown
+  rotate: false
+  xy: 324, 862
+  size: 52, 52
+  orig: 52, 52
+  offset: 0, 0
+  index: -1
+music
+  rotate: false
+  xy: 324, 916
+  size: 52, 52
+  orig: 52, 52
+  offset: 0, 0
+  index: -1
+exitRoomDown
+  rotate: false
+  xy: 324, 970
+  size: 52, 52
+  orig: 52, 52
+  offset: 0, 0
+  index: -1
+exitRoom
+  rotate: false
+  xy: 406, 719
+  size: 52, 52
+  orig: 52, 52
+  offset: 0, 0
+  index: -1
+bangtiso
+  rotate: false
+  xy: 979, 340
+  size: 24, 51
+  orig: 24, 51
+  offset: 0, 0
+  index: -1
+nuoc5
+  rotate: false
+  xy: 460, 719
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 4
+nuoc5
+  rotate: false
+  xy: 512, 719
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 3
+nuoc5
+  rotate: false
+  xy: 406, 773
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 2
+nuoc5
+  rotate: false
+  xy: 458, 773
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 1
+nuoc5
+  rotate: false
+  xy: 510, 773
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 0
+nuoc5
+  rotate: false
+  xy: 510, 773
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: 5
+menuButtonDisable
+  rotate: false
+  xy: 564, 719
+  size: 43, 44
+  orig: 43, 44
+  offset: 0, 0
+  index: -1
+avatarWait
+  rotate: false
+  xy: 406, 825
+  size: 77, 40
+  orig: 77, 40
+  offset: 0, 0
+  index: -1
+defaultAvatar
+  rotate: false
+  xy: 970, 298
+  size: 46, 40
+  orig: 46, 40
+  offset: 0, 0
+  index: -1
+loginButtonDown
+  rotate: false
+  xy: 406, 867
+  size: 143, 39
+  orig: 143, 39
+  offset: 0, 0
+  index: -1
+loginButton
+  rotate: false
+  xy: 406, 908
+  size: 143, 39
+  orig: 143, 39
+  offset: 0, 0
+  index: -1
+enterGameDown
+  rotate: false
+  xy: 406, 949
+  size: 142, 39
+  orig: 142, 39
+  offset: 0, 0
+  index: -1
+enterGame
+  rotate: false
+  xy: 611, 606
+  size: 142, 39
+  orig: 142, 39
+  offset: 0, 0
+  index: -1
+choingayEnable
+  rotate: false
+  xy: 755, 606
+  size: 127, 35
+  orig: 127, 35
+  offset: 0, 0
+  index: -1
+choingayDown
+  rotate: false
+  xy: 884, 606
+  size: 127, 35
+  orig: 127, 35
+  offset: 0, 0
+  index: -1
+choingayDisable
+  rotate: false
+  xy: 611, 647
+  size: 127, 35
+  orig: 127, 35
+  offset: 0, 0
+  index: -1
+okBtnDown
+  rotate: false
+  xy: 2, 987
+  size: 47, 32
+  orig: 47, 32
+  offset: 0, 0
+  index: -1
+okBtn
+  rotate: false
+  xy: 59, 987
+  size: 47, 32
+  orig: 47, 32
+  offset: 0, 0
+  index: -1
+cancelBtnDown
+  rotate: false
+  xy: 116, 987
+  size: 47, 32
+  orig: 47, 32
+  offset: 0, 0
+  index: -1
+cancelBtn
+  rotate: false
+  xy: 173, 986
+  size: 47, 32
+  orig: 47, 32
+  offset: 0, 0
+  index: -1
+logoutButtonDown
+  rotate: false
+  xy: 485, 825
+  size: 99, 30
+  orig: 99, 30
+  offset: 0, 0
+  index: -1
+logoutButton
+  rotate: false
+  xy: 406, 990
+  size: 99, 30
+  orig: 99, 30
+  offset: 0, 0
+  index: -1
+avatarReady
+  rotate: false
+  xy: 240, 986
+  size: 67, 29
+  orig: 67, 29
+  offset: 0, 0
+  index: -1
+DongHoDemNguoc
+  rotate: false
+  xy: 979, 393
+  size: 23, 28
+  orig: 23, 28
+  offset: 0, 0
+  index: -1
+menuButtonDown
+  rotate: false
+  xy: 562, 773
+  size: 40, 27
+  orig: 40, 27
+  offset: 0, 0
+  index: -1
+menuButton
+  rotate: false
+  xy: 551, 867
+  size: 40, 27
+  orig: 40, 27
+  offset: 0, 0
+  index: -1
+dialogButton
+  rotate: false
+  xy: 378, 808
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+back
+  rotate: false
+  xy: 378, 835
+  size: 25, 25
+  orig: 25, 25
+  offset: 0, 0
+  index: -1
+iconChatDown
+  rotate: false
+  xy: 378, 862
+  size: 24, 25
+  orig: 24, 25
+  offset: 0, 0
+  index: -1
+iconChat
+  rotate: false
+  xy: 378, 889
+  size: 24, 25
+  orig: 24, 25
+  offset: 0, 0
+  index: -1
+backDown
+  rotate: false
+  xy: 378, 916
+  size: 23, 25
+  orig: 23, 25
+  offset: 0, 0
+  index: -1
+sendBtnDown
+  rotate: false
+  xy: 244, 894
+  size: 37, 23
+  orig: 37, 23
+  offset: 0, 0
+  index: -1
+sendBtn
+  rotate: false
+  xy: 283, 894
+  size: 37, 23
+  orig: 37, 23
+  offset: 0, 0
+  index: -1
+dauO
+  rotate: false
+  xy: 378, 943
+  size: 22, 23
+  orig: 22, 23
+  offset: 0, 0
+  index: -1
+dauX1
+  rotate: false
+  xy: 378, 970
+  size: 24, 22
+  orig: 24, 22
+  offset: 0, 0
+  index: -1
+closeBtnDown
+  rotate: false
+  xy: 378, 994
+  size: 23, 22
+  orig: 23, 22
+  offset: 0, 0
+  index: -1
+closeBtn
+  rotate: false
+  xy: 996, 436
+  size: 23, 22
+  orig: 23, 22
+  offset: 0, 0
+  index: -1
+X
+  rotate: false
+  xy: 996, 460
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 8
+X
+  rotate: false
+  xy: 996, 484
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 7
+X
+  rotate: false
+  xy: 996, 508
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 6
+X
+  rotate: false
+  xy: 996, 532
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 5
+X
+  rotate: false
+  xy: 996, 556
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 4
+X
+  rotate: false
+  xy: 996, 580
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 3
+X
+  rotate: false
+  xy: 586, 825
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 2
+X
+  rotate: false
+  xy: 551, 908
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 1
+X
+  rotate: false
+  xy: 575, 908
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 0
+O
+  rotate: false
+  xy: 507, 990
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 7
+O
+  rotate: false
+  xy: 550, 949
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 6
+O
+  rotate: false
+  xy: 574, 949
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 5
+O
+  rotate: false
+  xy: 550, 973
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 4
+O
+  rotate: false
+  xy: 550, 997
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 3
+O
+  rotate: false
+  xy: 574, 973
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 2
+O
+  rotate: false
+  xy: 574, 997
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 1
+O
+  rotate: false
+  xy: 740, 647
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: 0
+dauXeffect
+  rotate: false
+  xy: 764, 647
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+dauOeffect
+  rotate: false
+  xy: 788, 647
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+chatSentences
+  rotate: false
+  xy: 812, 647
+  size: 165, 21
+  orig: 165, 21
+  offset: 0, 0
+  index: 4
+chatSentences
+  rotate: false
+  xy: 611, 684
+  size: 165, 21
+  orig: 165, 21
+  offset: 0, 0
+  index: 2
+chatSentences
+  rotate: false
+  xy: 778, 684
+  size: 165, 21
+  orig: 165, 21
+  offset: 0, 0
+  index: 1
+chatSentences
+  rotate: false
+  xy: 611, 707
+  size: 165, 21
+  orig: 165, 21
+  offset: 0, 0
+  index: 0
+chatSentencesDown
+  rotate: false
+  xy: 778, 707
+  size: 165, 21
+  orig: 165, 21
+  offset: 0, 0
+  index: 4
+chatSentencesDown
+  rotate: false
+  xy: 611, 730
+  size: 165, 21
+  orig: 165, 21
+  offset: 0, 0
+  index: 2
+chatSentencesDown
+  rotate: false
+  xy: 778, 730
+  size: 165, 21
+  orig: 165, 21
+  offset: 0, 0
+  index: 1
+chatSentencesDown
+  rotate: false
+  xy: 611, 753
+  size: 165, 21
+  orig: 165, 21
+  offset: 0, 0
+  index: 0
+timer
+  rotate: false
+  xy: 737, 348
+  size: 18, 21
+  orig: 18, 21
+  offset: 0, 0
+  index: 9
+timer
+  rotate: false
+  xy: 737, 371
+  size: 18, 21
+  orig: 18, 21
+  offset: 0, 0
+  index: 8
+timer
+  rotate: false
+  xy: 737, 394
+  size: 18, 21
+  orig: 18, 21
+  offset: 0, 0
+  index: 7
+timer
+  rotate: false
+  xy: 1004, 393
+  size: 18, 21
+  orig: 18, 21
+  offset: 0, 0
+  index: 6
+timer
+  rotate: false
+  xy: 386, 744
+  size: 18, 21
+  orig: 18, 21
+  offset: 0, 0
+  index: 5
+timer
+  rotate: false
+  xy: 386, 767
+  size: 18, 21
+  orig: 18, 21
+  offset: 0, 0
+  index: 4
+timer
+  rotate: false
+  xy: 562, 802
+  size: 18, 21
+  orig: 18, 21
+  offset: 0, 0
+  index: 3
+timer
+  rotate: false
+  xy: 582, 802
+  size: 18, 21
+  orig: 18, 21
+  offset: 0, 0
+  index: 2
+timer
+  rotate: false
+  xy: 979, 647
+  size: 18, 21
+  orig: 18, 21
+  offset: 0, 0
+  index: 1
+timer
+  rotate: false
+  xy: 999, 647
+  size: 18, 21
+  orig: 18, 21
+  offset: 0, 0
+  index: 0
+chatSentences
+  rotate: false
+  xy: 778, 753
+  size: 165, 20
+  orig: 165, 20
+  offset: 0, 0
+  index: 3
+chatSentencesDown
+  rotate: false
+  xy: 611, 776
+  size: 165, 20
+  orig: 165, 20
+  offset: 0, 0
+  index: 3
+cuocGold
+  rotate: false
+  xy: 945, 684
+  size: 55, 20
+  orig: 55, 20
+  offset: 0, 0
+  index: -1
+nameBg
+  rotate: false
+  xy: 611, 798
+  size: 80, 19
+  orig: 80, 19
+  offset: 0, 0
+  index: -1
+Oavatar
+  rotate: false
+  xy: 1002, 684
+  size: 18, 19
+  orig: 18, 19
+  offset: 0, 0
+  index: -1
+GSign
+  rotate: false
+  xy: 611, 819
+  size: 86, 18
+  orig: 86, 18
+  offset: 0, 0
+  index: -1
+goldSign
+  rotate: false
+  xy: 611, 839
+  size: 86, 18
+  orig: 86, 18
+  offset: 0, 0
+  index: -1
+Xavatar
+  rotate: false
+  xy: 847, 416
+  size: 19, 18
+  orig: 19, 18
+  offset: 0, 0
+  index: -1
+loginWithZingMe
+  rotate: false
+  xy: 674, 588
+  size: 196, 16
+  orig: 196, 16
+  offset: 0, 0
+  index: -1
+loginByZingMe
+  rotate: false
+  xy: 778, 776
+  size: 196, 16
+  orig: 196, 16
+  offset: 0, 0
+  index: -1
+iconXu
+  rotate: false
+  xy: 737, 417
+  size: 13, 14
+  orig: 13, 14
+  offset: 0, 0
+  index: -1
+iconGold
+  rotate: false
+  xy: 1008, 2
+  size: 13, 14
+  orig: 13, 14
+  offset: 0, 0
+  index: -1
+so
+  rotate: false
+  xy: 745, 244
+  size: 11, 14
+  orig: 11, 14
+  offset: 0, 0
+  index: 0
+so
+  rotate: false
+  xy: 1008, 18
+  size: 12, 13
+  orig: 12, 13
+  offset: 0, 0
+  index: 6
+so
+  rotate: false
+  xy: 745, 260
+  size: 10, 13
+  orig: 10, 13
+  offset: 0, 0
+  index: 9
+so
+  rotate: false
+  xy: 1008, 33
+  size: 13, 12
+  orig: 13, 12
+  offset: 0, 0
+  index: 4
+so
+  rotate: false
+  xy: 1008, 47
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: 8
+so
+  rotate: false
+  xy: 745, 275
+  size: 11, 12
+  orig: 11, 12
+  offset: 0, 0
+  index: 7
+so
+  rotate: false
+  xy: 745, 289
+  size: 11, 12
+  orig: 11, 12
+  offset: 0, 0
+  index: 2
+so
+  rotate: false
+  xy: 745, 303
+  size: 10, 12
+  orig: 10, 12
+  offset: 0, 0
+  index: 5
+so
+  rotate: false
+  xy: 745, 317
+  size: 9, 12
+  orig: 9, 12
+  offset: 0, 0
+  index: 3
+so
+  rotate: false
+  xy: 745, 331
+  size: 8, 12
+  orig: 8, 12
+  offset: 0, 0
+  index: 1
+bbchat
+  rotate: false
+  xy: 671, 424
+  size: 21, 9
+  orig: 21, 9
+  offset: 0, 0
+  index: 8
+bbchat
+  rotate: false
+  xy: 694, 424
+  size: 21, 9
+  orig: 21, 9
+  offset: 0, 0
+  index: 6
+bbchat
+  rotate: false
+  xy: 868, 416
+  size: 20, 9
+  orig: 20, 9
+  offset: 0, 0
+  index: 7
+bbchat
+  rotate: false
+  xy: 436, 426
+  size: 21, 8
+  orig: 21, 8
+  offset: 0, 0
+  index: 5
+bbchat
+  rotate: false
+  xy: 459, 426
+  size: 21, 8
+  orig: 21, 8
+  offset: 0, 0
+  index: 3
+bbchat
+  rotate: false
+  xy: 890, 416
+  size: 21, 8
+  orig: 21, 8
+  offset: 0, 0
+  index: 2
+bbchat
+  rotate: false
+  xy: 890, 426
+  size: 21, 8
+  orig: 21, 8
+  offset: 0, 0
+  index: 0
+bbchat
+  rotate: false
+  xy: 913, 416
+  size: 20, 8
+  orig: 20, 8
+  offset: 0, 0
+  index: 4
+bbchat
+  rotate: false
+  xy: 913, 426
+  size: 20, 8
+  orig: 20, 8
+  offset: 0, 0
+  index: 1
+
+Effect1.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Thua
+  rotate: false
+  xy: 2, 2
+  size: 130, 160
+  orig: 130, 160
+  offset: 0, 0
+  index: 8
+Thua
+  rotate: false
+  xy: 2, 164
+  size: 130, 160
+  orig: 130, 160
+  offset: 0, 0
+  index: 7
+Thua
+  rotate: false
+  xy: 2, 326
+  size: 130, 160
+  orig: 130, 160
+  offset: 0, 0
+  index: 6
+Thua
+  rotate: false
+  xy: 134, 2
+  size: 130, 160
+  orig: 130, 160
+  offset: 0, 0
+  index: 5
+Thua
+  rotate: false
+  xy: 134, 164
+  size: 130, 160
+  orig: 130, 160
+  offset: 0, 0
+  index: 4
+Thua
+  rotate: false
+  xy: 134, 326
+  size: 130, 160
+  orig: 130, 160
+  offset: 0, 0
+  index: 3
+Thua
+  rotate: false
+  xy: 266, 2
+  size: 130, 160
+  orig: 130, 160
+  offset: 0, 0
+  index: 2
+Thua
+  rotate: false
+  xy: 266, 164
+  size: 130, 160
+  orig: 130, 160
+  offset: 0, 0
+  index: 1
+Batdau
+  rotate: false
+  xy: 398, 2
+  size: 200, 70
+  orig: 200, 70
+  offset: 0, 0
+  index: 8
+Batdau
+  rotate: false
+  xy: 600, 2
+  size: 200, 70
+  orig: 200, 70
+  offset: 0, 0
+  index: 7
+Batdau
+  rotate: false
+  xy: 802, 2
+  size: 200, 70
+  orig: 200, 70
+  offset: 0, 0
+  index: 6
+Batdau
+  rotate: false
+  xy: 398, 74
+  size: 200, 70
+  orig: 200, 70
+  offset: 0, 0
+  index: 5
+Batdau
+  rotate: false
+  xy: 398, 146
+  size: 200, 70
+  orig: 200, 70
+  offset: 0, 0
+  index: 4
+Batdau
+  rotate: false
+  xy: 398, 218
+  size: 200, 70
+  orig: 200, 70
+  offset: 0, 0
+  index: 3
+Batdau
+  rotate: false
+  xy: 398, 290
+  size: 200, 70
+  orig: 200, 70
+  offset: 0, 0
+  index: 2
+Batdau
+  rotate: false
+  xy: 398, 362
+  size: 200, 70
+  orig: 200, 70
+  offset: 0, 0
+  index: 1
+Thang
+  rotate: false
+  xy: 398, 434
+  size: 150, 60
+  orig: 150, 60
+  offset: 0, 0
+  index: 12
+Thang
+  rotate: false
+  xy: 398, 434
+  size: 150, 60
+  orig: 150, 60
+  offset: 0, 0
+  index: 13
+Thang
+  rotate: false
+  xy: 600, 74
+  size: 150, 60
+  orig: 150, 60
+  offset: 0, 0
+  index: 11
+Thang
+  rotate: false
+  xy: 752, 74
+  size: 150, 60
+  orig: 150, 60
+  offset: 0, 0
+  index: 10
+Thang
+  rotate: false
+  xy: 600, 136
+  size: 150, 60
+  orig: 150, 60
+  offset: 0, 0
+  index: 9
+Thang
+  rotate: false
+  xy: 752, 136
+  size: 150, 60
+  orig: 150, 60
+  offset: 0, 0
+  index: 8
+Thang
+  rotate: false
+  xy: 600, 198
+  size: 150, 60
+  orig: 150, 60
+  offset: 0, 0
+  index: 7
+Thang
+  rotate: false
+  xy: 600, 260
+  size: 150, 60
+  orig: 150, 60
+  offset: 0, 0
+  index: 6
+Thang
+  rotate: false
+  xy: 600, 322
+  size: 150, 60
+  orig: 150, 60
+  offset: 0, 0
+  index: 5
+Thang
+  rotate: false
+  xy: 600, 384
+  size: 150, 60
+  orig: 150, 60
+  offset: 0, 0
+  index: 4
+Thang
+  rotate: false
+  xy: 600, 446
+  size: 150, 60
+  orig: 150, 60
+  offset: 0, 0
+  index: 3
+Thang
+  rotate: false
+  xy: 752, 198
+  size: 150, 60
+  orig: 150, 60
+  offset: 0, 0
+  index: 2
+Thang
+  rotate: false
+  xy: 752, 260
+  size: 150, 60
+  orig: 150, 60
+  offset: 0, 0
+  index: 1
+Hoa
+  rotate: false
+  xy: 266, 326
+  size: 120, 70
+  orig: 120, 70
+  offset: 0, 0
+  index: 5
+Hoa
+  rotate: false
+  xy: 266, 398
+  size: 120, 70
+  orig: 120, 70
+  offset: 0, 0
+  index: 4
+Hoa
+  rotate: false
+  xy: 752, 322
+  size: 120, 70
+  orig: 120, 70
+  offset: 0, 0
+  index: 3
+Hoa
+  rotate: false
+  xy: 752, 394
+  size: 120, 70
+  orig: 120, 70
+  offset: 0, 0
+  index: 2
+Hoa
+  rotate: false
+  xy: 874, 322
+  size: 120, 70
+  orig: 120, 70
+  offset: 0, 0
+  index: 1
