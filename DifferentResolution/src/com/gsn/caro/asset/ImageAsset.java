@@ -1,5 +1,7 @@
 package com.gsn.caro.asset;
 
+import java.util.List;
+
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetErrorListener;
 import com.badlogic.gdx.assets.AssetManager;
@@ -8,20 +10,21 @@ import com.badlogic.gdx.assets.loaders.resolvers.InternalFileHandleResolver;
 import com.badlogic.gdx.assets.loaders.resolvers.ResolutionFileResolver;
 import com.badlogic.gdx.assets.loaders.resolvers.ResolutionFileResolver.Resolution;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
 
 public class ImageAsset {
+	final String tag = ImageAsset.class.getSimpleName(); 
 	public AtlasRegion win;
 	public AtlasRegion background;
-	public Animation loseAni;
+	public List winAni;
 
 	private void assignContent() {
 		TextureAtlas atlas = manager.get("gdx/pack", TextureAtlas.class);
 		win = atlas.findRegion("win");
 		background = atlas.findRegion("background");		
+		winAni = atlas.findRegions("Thang");
 	}
 
 	private static ImageAsset _instance;
