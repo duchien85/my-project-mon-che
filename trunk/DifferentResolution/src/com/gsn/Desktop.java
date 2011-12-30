@@ -27,7 +27,7 @@ public class Desktop {
 		//createGame(1);
 		//new LwjglApplication(new CaroGame(), "My Caro", 480, 320, false);
 		new LwjglApplication(new CaroGame(), "My Caro", 800, 480, false);
-		//new LwjglApplication(new CaroGame(), "My Caro", 320, 240, false);
+		//new LwjglApplication(new CaroGame(), "My Caro", 240, 320, false);
 	}
 
 }
