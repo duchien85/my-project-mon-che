@@ -5,23 +5,18 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL10;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.gsn.caro.asset.ImageAsset;
+import com.gsn.engine.scene2d.GsnInputListener;
 
 public class CaroGame extends Game {
-	ImageAsset asset;
-
-	private Stage stage;
-	
-	public void setStage(Stage stage){
-		this.stage = stage;
-		Gdx.input.setInputProcessor(stage);
-	}
+	ImageAsset asset;	
+	Stage global;	
 	
 	@Override
 	public void create() {
 		asset = ImageAsset.getInstance();
 		asset.create();
-		Stage tmp = new TestStage(320, 240, false);
-		setStage(tmp);		
+		global = new GlobalStage(240, 320, false);					
+		Gdx.input.setInputProcessor(global);
 	}
 
 	@Override
@@ -29,8 +24,8 @@ public class CaroGame extends Game {
 		// TODO Auto-generated method stub
 		super.render();
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
-		stage.act(Gdx.graphics.getDeltaTime());
-		stage.draw();
+		global.act(Gdx.graphics.getDeltaTime());
+		global.draw();
 	}
 
 	@Override

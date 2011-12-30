@@ -1,4 +1,4 @@
-package com.gsn.engine;
+package com.gsn.engine.scene2d;
 
 import java.util.List;
 
