@@ -26,7 +26,7 @@ public class Desktop {
 		// TODO Auto-generated method stub		
 		//createGame(1);
 		//new LwjglApplication(new CaroGame(), "My Caro", 480, 320, false);
-		new LwjglApplication(new CaroGame(), "My Caro", 800, 480, false);
+		new LwjglApplication(new CaroGame(), "My Caro", 480, 600, false);
 		//new LwjglApplication(new CaroGame(), "My Caro", 240, 320, false);
 	}
 
