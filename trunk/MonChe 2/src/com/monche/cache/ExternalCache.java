@@ -71,7 +71,7 @@ public class ExternalCache {
 		if (isAvaiable()){
 			File path = context.getExternalCacheDir();
 			 File file = new File(path,id+".jpg");
-			if (!file.exists()) return true;
+			if (file.exists()) return true;
 			else return false;
 		}else return false;
 	}
