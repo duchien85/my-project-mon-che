@@ -54,7 +54,7 @@ public class PhotoLibs {
 	}
 	
 	public void setPhotoView(ViewPhotoActivity v){
-		imageDownloader.view = v;
+		imageDownloader.setView(v);
 	}
 	
 	public static PhotoLibs getInstances(){
@@ -150,7 +150,7 @@ public class PhotoLibs {
 				photos = new ArrayList<String>();
 				for (String ss : ret) {
 					Util.Trace("cat: "+ss);
-					photos.add(getImageUrl(ss));
+					photos.add(ss);
 				}
 				((ImageListActivity)activity).updatePhotos();
 				currentPhoto = 0;
@@ -163,20 +163,30 @@ public class PhotoLibs {
 	}
 
 	public void nextPhoto(){
-		currentPhoto++;
-		if (currentPhoto>=photos.size())
-			currentPhoto=0;
+		currentPhoto= nextPhotoIndex(currentPhoto);
+	}
+	
+	public int nextPhotoIndex(int current){
+		current++;
+		if (current>=photos.size())
+			current=0;
+		return current;
 	}
 	
 	public void prePhoto(){
-		currentPhoto--;
-		if (currentPhoto<0)
-			currentPhoto=photos.size()-1;
+		currentPhoto = prePhotoIndex(currentPhoto);
+	}
+	
+	public int prePhotoIndex(int current){
+		current--;
+		if (current<0)
+			current=photos.size();
+		return current;
 	}
 	
 	public void loadPhotoTo(ImageView img) {
-		//img.setVisibility(View.INVISIBLE);
 		imageDownloader.download(photos.get(currentPhoto),img);
+		imageDownloader.loadFutureCache(photos.get(nextPhotoIndex(currentPhoto)));
 	}
 	
 	
