@@ -1,6 +1,8 @@
 package com.components.pinchzoom;
 
 import java.util.Currency;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.Vector;
 
 import com.monche.logic.Util;
@@ -12,6 +14,7 @@ import android.graphics.Point;
 import android.graphics.PointF;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
+import android.os.Handler;
 import android.text.method.MovementMethod;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
@@ -80,7 +83,7 @@ public class PinchImageView extends ImageView{
 			d.setDither(true);
 		}
 		mBitmap = bm;
-		center(true, true);
+		//center(true, true);
 	}
 	
 	protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
@@ -138,10 +141,12 @@ public class PinchImageView extends ImageView{
 	    		ySec = event.getY(0);
 	    		if (xPre>0 && yPre>0){
 	    			if (isDrag)
+	    				//center(true, true);
 	    				postTranslate(xSec - xPre, ySec - yPre);
 	    			xPre = xSec;
 	    			yPre = ySec;
 	    		}else{
+	    			
 	    			xPre = xSec;
 	    			yPre = ySec;
 	    		}
@@ -190,14 +195,22 @@ public class PinchImageView extends ImageView{
 	}
 	
 	public synchronized void postTranslate(float dx, float dy) {
-		Util.Trace("Translate: "+dx+" "+dy);
 		mSuppMatrix.postTranslate(dx, dy);
 		setImageMatrix(getImageViewMatrix());
+
+		// Debug position
+		Matrix m = getImageViewMatrix();
+		RectF rect = new RectF(0, 0,
+				mBitmap.getWidth(),
+				mBitmap.getHeight());
+		m.mapRect(rect);
+		Util.Trace("Translate: "+dx+" "+dy+"  Result: "+ rect.left+" "+rect.top +"SIze: "+ rect.width()+" "+ rect.height() );
+		//center(true, true);
 	}
 	
 	public void center(boolean horizontal, boolean vertical) {
 		//zoomTo(1);
-		Util.Trace("Centering #######");
+		//Util.Trace("Centering ####### "+getWidth()+" "+getHeight());
 		if (mBitmap == null) {
 			return;
 		}
@@ -209,11 +222,13 @@ public class PinchImageView extends ImageView{
 
 		m.mapRect(rect);
 
+		//Util.Trace("Bitmap position:" + rect.left+" "+rect.top +" "+rect.width()+" "+rect.height());
 		float height = rect.height(), 
 			width  = rect.width(), 
 			deltaX = 0, 
 			deltaY = 0;
-
+//		deltaX = -rect.left;
+//		deltaY = -rect.top;
 		if (vertical) {
 			int viewHeight = getHeight();
 			if (height < viewHeight) {
@@ -241,7 +256,7 @@ public class PinchImageView extends ImageView{
 				deltaX = viewWidth - rect.right;
 			}
 		}
-
+		//Util.Trace("Position shift:" + deltaX+" "+deltaY);
 		postTranslate(deltaX, deltaY);
 		//setImageMatrix(getImageViewMatrix());
 	}
@@ -261,6 +276,14 @@ public class PinchImageView extends ImageView{
 		mSuppMatrix.setScale(scale, scale, getWidth() / 2f, getHeight() / 2f);
 		setImageMatrix(getImageViewMatrix());
 		//center(true, true);
+		// Debug position
+				Matrix m = getImageViewMatrix();
+				RectF rect = new RectF(0, 0,
+						mBitmap.getWidth(),
+						mBitmap.getHeight());
+				m.mapRect(rect);
+				Util.Trace("Zoom: "+scale+"  Result: "+ rect.left+" "+rect.top +"SIze: "+ rect.width()+" "+ rect.height() );
+		Util.Trace("Zoom done");
 	}
 	
 	
@@ -289,11 +312,21 @@ public class PinchImageView extends ImageView{
 		}
 		
 		setImageMatrix(getImageViewMatrix());
-		center(true, true);
+		//center(true, true);
 	}
+	
+	private Handler mHandler = new Handler();
+	public Runnable updateViewTask = new Runnable(){
+		public void run() {
+			center(true, true);
+			setVisibility(View.VISIBLE);
+			mHandler.removeCallbacks(updateViewTask);
+		};
+	};
+	
 	public void resetView(){
 		zoomTo(1);
-		center(true,true);
+		mHandler.postDelayed(updateViewTask, 100);
 	}
 	private void getProperBaseMatrix(Matrix matrix) {
 		float viewWidth = getWidth(),

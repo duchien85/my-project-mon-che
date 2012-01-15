@@ -1,6 +1,7 @@
 package com.example.android.imagedownloader;
 
 import com.components.pinchzoom.PinchImageView;
+//import com.monche.imageview.ImageViewTouch;
 import com.monche.logic.PhotoLibs;
 import com.monche.logic.Util;
 
@@ -40,7 +41,7 @@ public class ViewPhotoActivity extends Activity {
 					Util.Trace("Pre click!");
 					PhotoLibs.getInstances().prePhoto();
 					PhotoLibs.getInstances().loadPhotoTo(img);
-					img.center(true, true);
+					//img.center(true, true);
 				}
 			});
 	        nextBtn.setOnClickListener(new View.OnClickListener() {
@@ -49,7 +50,7 @@ public class ViewPhotoActivity extends Activity {
 	    					Util.Trace("Next click!");
 	    					PhotoLibs.getInstances().nextPhoto();
 	    					PhotoLibs.getInstances().loadPhotoTo(img);
-	    					img.center(true, true);
+	    					//img.center(true, true);
 	    				}
 	    			});
 	 }
@@ -64,7 +65,7 @@ public class ViewPhotoActivity extends Activity {
 	protected void onStart() {
 		super.onStart();
 		PhotoLibs.getInstances().loadPhotoTo(img);
-		img.center(true, true);
+		//img.center(true, true);
 	}
 	public void onBeginLoad(){
 		img.setVisibility(View.INVISIBLE);
@@ -73,7 +74,7 @@ public class ViewPhotoActivity extends Activity {
 		nextBtn.setClickable(false);
 	}
 	public void onLoaded(){
-		img.setVisibility(View.VISIBLE);
+		//img.setVisibility(View.VISIBLE);
 		t.setVisibility(View.INVISIBLE);
 		preBtn.setClickable(true);
 		nextBtn.setClickable(true);
