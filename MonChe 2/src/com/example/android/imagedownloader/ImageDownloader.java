@@ -301,9 +301,10 @@ public class ImageDownloader {
     
    
     public void loadFutureCache(String id){
+    	if (cache.havePhoto(id)) return;
     	ImageId p = new ImageId(id, PhotoLibs.getInstances().getImageUrl(id));
-    	 LoadToCacheTask task = new LoadToCacheTask();
-         task.execute(p);
+    	LoadToCacheTask task = new LoadToCacheTask();
+        task.execute(p);
     }
     
     private void addBitmapToCache(String id, Bitmap bitmap) {
