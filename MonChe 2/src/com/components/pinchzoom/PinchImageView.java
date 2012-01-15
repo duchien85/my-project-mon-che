@@ -197,6 +197,7 @@ public class PinchImageView extends ImageView{
 	
 	public void center(boolean horizontal, boolean vertical) {
 		//zoomTo(1);
+		Util.Trace("Centering #######");
 		if (mBitmap == null) {
 			return;
 		}

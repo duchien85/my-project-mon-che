@@ -45,7 +45,7 @@ public class ImageListActivity extends ListActivity   {
 //        radioGroup.setOnCheckedChangeListener(this);
 //        
 //        setListAdapter(new ImageAdapter());
-        PhotoLibs.getInstances().activity = this;
+        PhotoLibs.getInstances().listViewActivity = this;
         PhotoLibs.getInstances().login();
     }
 

@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ViewPhotoActivity extends Activity {
-	PinchImageView img;
+	public PinchImageView img;
 	Button preBtn;
 	Button nextBtn;
 	TextView t;
