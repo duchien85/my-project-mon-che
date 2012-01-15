@@ -105,7 +105,7 @@ public class PinchImageView extends ImageView{
 	private boolean isDrag = false;
 	public boolean onTouchEvent(MotionEvent event) {
 		//Util.Trace("Image Touch! "+ event.getPointerCount()+" "+ event.getAction()); 
-		
+		if (mBitmap==null) return false;
 		int action = event.getAction() & MotionEvent.ACTION_MASK, 
 		p_count = event.getPointerCount();
 		//Util.Trace("Center");
@@ -284,6 +284,7 @@ public class PinchImageView extends ImageView{
 				m.mapRect(rect);
 				Util.Trace("Zoom: "+scale+"  Result: "+ rect.left+" "+rect.top +"SIze: "+ rect.width()+" "+ rect.height() );
 		Util.Trace("Zoom done");
+		center(true,true);
 	}
 	
 	
