@@ -1,33 +1,17 @@
 package com.monche.logic;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.graphics.Bitmap;
-import android.net.http.AndroidHttpClient;
-import android.os.AsyncTask;
-import android.os.Debug;
 import android.util.Log;
-import android.view.View;
 import android.widget.ImageView;
 
+import com.bigant.monche.MonCheActivity;
+import com.bigant.monche.ViewPhotoActivity;
 import com.example.android.imagedownloader.ImageDownloader;
-import com.example.android.imagedownloader.ImageListActivity;
-import com.example.android.imagedownloader.ViewPhotoActivity;
-import com.monche.logic.task.*;
+import com.monche.logic.task.StringGetTask;
 
 public class PhotoLibs {
 	
@@ -119,7 +103,7 @@ public class PhotoLibs {
 	public void handleString(String id, List<String> ret){
 		Util.Trace("got: "+id);
 		if (ret.size()<=0){
-			((ImageListActivity)listViewActivity).showDialog("No internet connection!");
+			((MonCheActivity)listViewActivity).showDialog("No internet connection!");
 			Log.d("ImageDownloader","No internet");
 			return;
 		}
@@ -137,7 +121,7 @@ public class PhotoLibs {
 				getCategories();
 				
 			}else{
-				((ImageListActivity)listViewActivity).showDialog("LoginFailed!");
+				((MonCheActivity)listViewActivity).showDialog("LoginFailed!");
 				Util.Trace("login: FAILED");
 			}
 		}else
@@ -151,7 +135,7 @@ public class PhotoLibs {
 				categoriesId.add(ss.substring(0, pos));
 				categoriesName.add(ss.substring(pos, ss.length()));
 			}
-			((ImageListActivity)listViewActivity).updateCategories();
+			((MonCheActivity)listViewActivity).updateCategories();
 		}else
 			if (id.equals("list")){
 				photos = new ArrayList<String>();
@@ -160,7 +144,7 @@ public class PhotoLibs {
 					photos.add(ss);
 				}
 				if (firstPage){
-					((ImageListActivity)listViewActivity).updatePhotos();
+					((MonCheActivity)listViewActivity).updatePhotos();
 					firstPage = false;
 				}else{
 					loadPhotoTo(viewPhotoActivity.img);

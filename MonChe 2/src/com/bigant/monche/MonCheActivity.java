@@ -14,9 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.imagedownloader;
-
-import com.monche.logic.PhotoLibs;
+package com.bigant.monche;
 
 import android.app.AlertDialog;
 import android.app.ListActivity;
@@ -24,13 +22,14 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.RadioGroup;
 
-public class ImageListActivity extends ListActivity   {
+import com.monche.logic.PhotoLibs;
+
+public class MonCheActivity extends ListActivity   {
 
 	public static final String APP_TAG = "ImageDownloader";
 	
@@ -68,7 +67,7 @@ public class ImageListActivity extends ListActivity   {
 	       .setCancelable(false)
 	       .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
 	           public void onClick(DialogInterface dialog, int id) {
-	                ImageListActivity.this.finish();
+	                MonCheActivity.this.finish();
 	           }
 	       });
 		AlertDialog alert = builder.create();

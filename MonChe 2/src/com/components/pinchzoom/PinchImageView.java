@@ -1,27 +1,19 @@
 package com.components.pinchzoom;
 
-import java.util.Currency;
-import java.util.Timer;
-import java.util.TimerTask;
-import java.util.Vector;
-
-import com.monche.logic.Util;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
-import android.graphics.Point;
 import android.graphics.PointF;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
-import android.text.method.MovementMethod;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
-import android.view.View.OnTouchListener;
 import android.widget.ImageView;
+
+import com.monche.logic.Util;
 
 public class PinchImageView extends ImageView{
 	public static final int GROW = 0;

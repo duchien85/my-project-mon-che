@@ -16,16 +16,17 @@
 
 package com.example.android.imagedownloader;
 
+import java.io.FilterInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.lang.ref.WeakReference;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
-
-import com.monche.cache.ExternalCache;
-import com.monche.logic.PhotoLibs;
-import com.monche.logic.Util;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -34,19 +35,12 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.http.AndroidHttpClient;
 import android.os.AsyncTask;
-import android.os.Handler;
 import android.util.Log;
-import android.view.View;
 import android.widget.ImageView;
 
-import java.io.FilterInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.lang.ref.SoftReference;
-import java.lang.ref.WeakReference;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.concurrent.ConcurrentHashMap;
+import com.bigant.monche.ViewPhotoActivity;
+import com.monche.cache.ExternalCache;
+import com.monche.logic.PhotoLibs;
 
 public class ImageDownloader {
 	

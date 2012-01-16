@@ -11,16 +11,16 @@ import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.methods.HttpGet;
 
-import com.example.android.imagedownloader.ImageListActivity;
-
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.http.AndroidHttpClient;
 import android.util.Log;
 
+import com.bigant.monche.MonCheActivity;
+
 public class Util {
 	public static void Trace(String s){
-		Log.d(ImageListActivity.APP_TAG, s);
+		Log.d(MonCheActivity.APP_TAG, s);
 	}
 	
 	public static Bitmap downloadBitmap(String url) {

@@ -1,9 +1,4 @@
-package com.example.android.imagedownloader;
-
-import com.components.pinchzoom.PinchImageView;
-//import com.monche.imageview.ImageViewTouch;
-import com.monche.logic.PhotoLibs;
-import com.monche.logic.Util;
+package com.bigant.monche;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -12,8 +7,11 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.components.pinchzoom.PinchImageView;
+import com.monche.logic.PhotoLibs;
+import com.monche.logic.Util;
 
 public class ViewPhotoActivity extends Activity {
 	public PinchImageView img;
