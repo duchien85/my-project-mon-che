@@ -18,11 +18,11 @@ import android.graphics.BitmapFactory;
 import android.net.http.AndroidHttpClient;
 import android.util.Log;
 
-import com.bigant.monche.MonCheActivity;
+//import com.bigant.monche.MonCheActivity;
 
 public class Util {
 	public static void Trace(String s){
-		Log.d(MonCheActivity.APP_TAG, s);
+		//Log.d(MonCheActivity.APP_TAG, s);
 	}
 	
 	public static Bitmap downloadBitmap(String url) {
