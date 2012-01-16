@@ -15,7 +15,7 @@ import android.util.Log;
 
 public class ExternalCache {
 	public Context context;
-	
+	 
 	
 	public boolean isAvaiable(){
 		boolean mExternalStorageAvailable = false;
