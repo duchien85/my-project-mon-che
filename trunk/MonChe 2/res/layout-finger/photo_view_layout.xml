@@ -22,7 +22,7 @@
             android:text="Loading"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
-        <com.components.pinchzoom.PinchImageView
+        <com.monche.imageview.PinchImageView
             android:id="@+id/imageView1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -42,7 +42,7 @@
 	            android:layout_height="wrap_content"
 	            android:layout_gravity="center"
 	            android:layout_weight="1"
-	            android:text="Pre" />
+	            android:text="Trước" />
 	
 	        <Button
 	            android:id="@+id/button2"
@@ -51,6 +51,6 @@
 	            android:layout_alignParentRight="true"
 	            android:layout_gravity="center_horizontal|right"
 	            android:layout_weight="1"
-	            android:text="Next" />
+	            android:text="Sau" />
 	    </LinearLayout>
 </LinearLayout>
