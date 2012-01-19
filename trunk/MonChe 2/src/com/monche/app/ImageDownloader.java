@@ -63,7 +63,7 @@ public class ImageDownloader {
     private static final String LOG_TAG = "ImageDownloader";
     public enum Mode { NO_ASYNC_TASK, NO_DOWNLOADED_DRAWABLE, CORRECT }
     private Mode mode = Mode.CORRECT;
-    public ViewPhotoActivity view;
+    public com.monche.app.ViewPhotoActivity view;
     
     public ExternalCache cache = new ExternalCache();
     
@@ -314,7 +314,7 @@ public class ImageDownloader {
         return cache.getFromCache(id);
     }
 
-	public void setView(ViewPhotoActivity v) {
+	public void setView(com.monche.app.ViewPhotoActivity v) {
 		view = v;
 		cache.context = v.getApplicationContext();
 	}

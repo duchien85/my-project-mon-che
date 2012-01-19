@@ -37,8 +37,9 @@ import android.net.http.AndroidHttpClient;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.ImageView;
+import com.monche.app.*;
 
-import com.bigant.monche.ViewPhotoActivity;
+
 import com.monche.cache.ExternalCache;
 import com.monche.logic.PhotoLibs;
 

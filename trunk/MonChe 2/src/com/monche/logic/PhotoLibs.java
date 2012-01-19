@@ -24,9 +24,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.monche.app.ViewPhotoActivity;
 import com.monche.app.ImageDownloader;
 import com.monche.app.ImageListActivity;
-import com.monche.app.ViewPhotoActivity;
+
 import com.monche.logic.task.*;
 
 public class PhotoLibs {
@@ -59,9 +60,9 @@ public class PhotoLibs {
 		imageDownloader  = new ImageDownloader();
 	}
 	
-	public void setPhotoView(ViewPhotoActivity v){
-		viewPhotoActivity = v;
-		imageDownloader.setView(v);
+	public void setPhotoView(ViewPhotoActivity viewPhotoActivity2){
+		viewPhotoActivity = viewPhotoActivity2;
+		imageDownloader.setView(viewPhotoActivity2);
 	}
 	
 	public static PhotoLibs getInstances(){
