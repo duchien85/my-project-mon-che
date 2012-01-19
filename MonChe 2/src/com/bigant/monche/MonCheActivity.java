@@ -27,7 +27,9 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.monche.app.R;
 import com.monche.logic.PhotoLibs;
+import com.monche.app.*;
 
 public class MonCheActivity extends ListActivity   {
 
