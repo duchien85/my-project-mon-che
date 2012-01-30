@@ -262,6 +262,7 @@ public class PinchImageView extends ImageView{
 	
 	private float currentZoom;
 	protected void zoomTo(float scale) {
+		if (mBitmap==null) return;
 		Util.Trace("Zoomto: "+scale);
 		if (scale<MIN_SCALE || scale>MAX_SCALE) return;
 		currentZoom = scale;
@@ -278,7 +279,6 @@ public class PinchImageView extends ImageView{
 		Util.Trace("Zoom done");
 		center(true,true);
 	}
-	
 	
 	protected void zoomIn(float scale) {
 		if (scale > MAX_SCALE) return;
@@ -322,11 +322,11 @@ public class PinchImageView extends ImageView{
 		mHandler.postDelayed(updateViewTask, 100);
 	}
 	private void getProperBaseMatrix(Matrix matrix) {
-		float viewWidth = getWidth(),
-			viewHeight = getHeight();
+		float viewWidth = getWidth();
+		float viewHeight = getHeight();
 		
-		float w = mBitmap.getWidth(), 
-			h = mBitmap.getHeight();
+		float w = mBitmap.getWidth(); 
+		float h = mBitmap.getHeight();
 		
 		matrix.reset();
 		

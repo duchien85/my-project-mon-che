@@ -274,15 +274,17 @@ public class PinchImageView extends ImageView{
 		if (scale<MIN_SCALE || scale>MAX_SCALE) return;
 		currentZoom = scale;
 		mSuppMatrix.setScale(scale, scale, getWidth() / 2f, getHeight() / 2f);
+		Util.Trace("Zoomto2: "+scale);
 		setImageMatrix(getImageViewMatrix());
+		Util.Trace("Zoomto3: "+scale);
 		//center(true, true);
 		// Debug position
-				Matrix m = getImageViewMatrix();
+		/*		Matrix m = getImageViewMatrix();
 				RectF rect = new RectF(0, 0,
 						mBitmap.getWidth(),
 						mBitmap.getHeight());
 				m.mapRect(rect);
-				Util.Trace("Zoom: "+scale+"  Result: "+ rect.left+" "+rect.top +"SIze: "+ rect.width()+" "+ rect.height() );
+				Util.Trace("Zoom: "+scale+"  Result: "+ rect.left+" "+rect.top +"SIze: "+ rect.width()+" "+ rect.height() );*/
 		Util.Trace("Zoom done");
 		center(true,true);
 	}

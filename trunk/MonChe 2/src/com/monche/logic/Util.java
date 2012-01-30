@@ -11,6 +11,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.methods.HttpGet;
 
+import com.bigant.monche.MonCheActivity;
 import com.monche.app.ImageListActivity;
 
 import android.graphics.Bitmap;
@@ -22,7 +23,7 @@ import android.util.Log;
 
 public class Util {
 	public static void Trace(String s){
-		//Log.d(MonCheActivity.APP_TAG, s);
+		Log.d(MonCheActivity.APP_TAG, s);
 	}
 	
 	public static Bitmap downloadBitmap(String url) {
