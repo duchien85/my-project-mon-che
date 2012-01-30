@@ -34,14 +34,16 @@ public class ExternalCache {
 	}
 	
 	public void saveToCache(String filename, Bitmap b){
+		if (b==null) return;
 		if (isAvaiable()){
 			 File path = context.getExternalCacheDir();
 			 Log.d("ExternalStorage", path.toString()+filename.toString()+".jpg");
 			 try {
 				 	File file = new File(path,filename+".jpg");
-				 	//if (file.exists())
+				 	if (file.exists()) return;
 			        OutputStream os = new FileOutputStream(file);
-			        b.compress(Bitmap.CompressFormat.JPEG, 90, os);
+			        if (os!=null)
+			        	b.compress(Bitmap.CompressFormat.JPEG, 90, os);
 			        os.close();
 			    } catch (IOException e) {
 			        Log.d("ExternalStorage", "Error writing ", e);
