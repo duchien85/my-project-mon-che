@@ -37,8 +37,7 @@ import android.widget.RadioGroup;
 
 public class ImageListActivity extends Activity   {
 
-	public static final String APP_TAG = "Monche";
-	
+	public static final String APP_TAG = "Monche";	
 	public Button newBtn;
 	public Button randomBtn;
     @Override
@@ -50,6 +49,7 @@ public class ImageListActivity extends Activity   {
         setContentView(R.layout.view_option);
         newBtn = (Button) findViewById(R.id.button1);
         randomBtn = (Button) findViewById(R.id.button2);
+        PhotoLibs.getInstances().setCategory("New");
         newBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {

@@ -29,7 +29,7 @@ public class ViewPhotoActivity extends Activity {
 	                                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 	        setContentView(R.layout.photo_view_layout);
 	        t = (TextView) findViewById(R.id.textView1);
-	        t.setText("LOADiNG");
+	        t.setText("Loading...");
 	        //t.setVisibility(View.VISIBLE);
 	        img = (PinchImageView) findViewById(R.id.imageView1);
 	        //img.setVisibility(View.INVISIBLE);
