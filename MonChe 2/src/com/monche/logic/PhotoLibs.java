@@ -95,8 +95,7 @@ public class PhotoLibs {
 	
 	
 	public void selectCategory(int index){
-		currentCategory = index;
-		//Util.Trace("Choose cate: "+index);
+		currentCategory = index;		
 		//http://mobsvr.com/drm/?act=list&u=uid&t=token&cate=cateID&type=filter&page=pageNo
 		String url = SERVER+"?act=list&u="+uid+"&t="+token+"&cate="+categoriesId.get(index)+"&type="+type+"&page="+page;
 		StringGetTask task = new StringGetTask("list", this);
@@ -118,8 +117,11 @@ public class PhotoLibs {
 	
 		
 	public void handleString(String id, List<String> ret){
+		try{
+			
+		
 		Util.Trace("got: "+id);
-		if (ret.size()<=0){
+		if (ret.size()<=0){			
 			((ImageListActivity)listViewActivity).showDialog("No internet connection!");
 			Log.d("ImageDownloader","No internet");
 			return;
@@ -153,7 +155,7 @@ public class PhotoLibs {
 				categoriesName.add(ss.substring(pos, ss.length()));
 			}
 			//((ImageListActivity)listViewActivity).updateCategories();
-			//selectCategory(0);
+			selectCategory(0);
 		}else
 			if (id.equals("list")){
 				photos = new ArrayList<String>();
@@ -169,6 +171,9 @@ public class PhotoLibs {
 				}
 				currentPhoto = 0;
 			}
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	public static void main(String args[]){
@@ -203,16 +208,17 @@ public class PhotoLibs {
 	
 	public void loadPhotoTo(ImageView img) {
 		Util.Trace("Load Photo: "+ currentPhoto+" in page: "+ page);
-		imageDownloader.download(photos.get(currentPhoto),img);
-		imageDownloader.loadFutureCache(photos.get(nextPhotoIndex(currentPhoto)));
+		imageDownloader.download(photos.get(currentPhoto),img);		
+		if (nextPhotoIndex(currentPhoto)<photos.size())
+			imageDownloader.loadFutureCache(photos.get(nextPhotoIndex(currentPhoto)));
 	}
 
+	public boolean needLoad = false;
 	public void setCategory(String string) {
 		type = string;
 		firstPage = true;
-		page=1;
-		selectCategory(0);
+		page=1;		
+		if (needLoad) selectCategory(0);
+		else needLoad = true;
 	}
-	
-	
 }
