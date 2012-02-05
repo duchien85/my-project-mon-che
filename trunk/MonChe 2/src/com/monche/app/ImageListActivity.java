@@ -25,6 +25,7 @@ import android.app.ListActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -40,13 +41,28 @@ public class ImageListActivity extends Activity   {
 	public static final String APP_TAG = "Monche";	
 	public Button newBtn;
 	public Button randomBtn;
+	public boolean isShowSplashScreen = true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, 
                                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.view_option);
+        setContentView(R.layout.splash_screen);
+        isShowSplashScreen = true;
+        Handler h = new Handler();
+        h.postDelayed(new Runnable() {
+			@Override
+			public void run() {
+			startApp();
+			}
+		}, 2000);
+    }
+
+    public void startApp()
+    {
+    	isShowSplashScreen = false;
+    	setContentView(R.layout.view_option);
         newBtn = (Button) findViewById(R.id.button1);
         randomBtn = (Button) findViewById(R.id.button2);
         PhotoLibs.getInstances().setCategory("New");
@@ -69,13 +85,16 @@ public class ImageListActivity extends Activity   {
         PhotoLibs.getInstances().listViewActivity = this;
         PhotoLibs.getInstances().login();
     }
-
+    
 	@Override
 	protected void onResume() {
 		super.onResume();
-		newBtn.setClickable(true);
-		randomBtn.setClickable(true);
+		if (newBtn!=null)
+			newBtn.setClickable(true);
+		if (randomBtn!=null)
+			randomBtn.setClickable(true);
 	}
+	
     public void showDialog(String mess){
     	AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setMessage(mess)
