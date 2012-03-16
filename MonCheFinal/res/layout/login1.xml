@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/stub_image" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/progressBarLogIn"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/layoutLogin"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:editable="false"
+            android:text="UserName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="15dip"
+            android:text="Password"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/userLogText"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="#ccc"
+            android:textColor="@color/solid_black" >
+            
+        </EditText>
+
+        <EditText
+            android:id="@+id/passLogText"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_marginRight="10dip"
+            android:layout_alignLeft="@+id/userLogText"
+            android:inputType="textPassword"
+            android:background="#ccc"
+            android:textColor="@color/solid_black" >
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/checkBoxLogIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:text="Save"
+            android:textColor="@color/solid_white" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/checkBoxLogIn"
+            android:layout_alignRight="@+id/passLogText"
+            android:text="Auto Login" />
+
+        <Button
+            android:id="@+id/LogBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignRight="@+id/checkBox1"
+            android:layout_below="@+id/checkBox1"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/signInFirstButton"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignRight="@+id/checkBox1"
+            android:layout_below="@+id/LogBtn"
+            android:text="Register" />
+    </RelativeLayout>
+
+</RelativeLayout>

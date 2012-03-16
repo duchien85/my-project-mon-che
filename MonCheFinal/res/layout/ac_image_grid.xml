@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutGrid"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical|center_horizontal" >
+
+    <bigant.monche.view.components.HandleGridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="fill_horizontal"
+        android:numColumns="2"
+        android:stretchMode="columnWidth" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical|center_horizontal" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="44dp" >
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/topView"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/topbar"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitCenter"
+            android:src="@null" />
+
+        <ImageView
+            android:id="@+id/bottomView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_bottom"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitCenter"
+            android:src="@null" />
+        <ImageView
+            android:id="@+id/bgNotiView"
+            android:layout_width="150dip"
+            android:layout_height="75dip"
+            android:layout_above="@+id/bottomView1"
+            android:layout_marginBottom="-12dip"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/noti" />
+        
+
+        <ImageButton
+            android:id="@+id/newButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bottomView1"
+            android:layout_alignRight="@+id/frameLayout1"
+            android:layout_marginBottom="60dip"
+            android:layout_marginRight="30dip"
+            android:background="@null"
+            android:src="@drawable/new_button" />
+
+        <ImageButton
+            android:id="@+id/favouriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bottomView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dip"
+            android:background="@null"
+            android:src="@drawable/hot_button" />
+
+        <ImageButton
+            android:id="@+id/randomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bottomView1"
+            android:layout_alignLeft="@+id/frameLayout1"
+            android:layout_marginBottom="60dip"
+            android:layout_marginLeft="30dip"
+            android:background="@null"
+            android:src="@drawable/random_button" />
+
+        <ProgressBar
+            android:id="@+id/progressBarGrid"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        
+        <ImageButton
+            android:id="@+id/logOutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dip"
+            android:background="@null"
+            android:src="@drawable/login_button" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dip"
+            android:text="New"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/solid_red" />
+
+        
+
+    </RelativeLayout>
+
+</RelativeLayout>
