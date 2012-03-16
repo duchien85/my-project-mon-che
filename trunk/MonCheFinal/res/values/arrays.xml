@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="heavy_images">
+        <item>http://blog.cyberbofh.com/wp-content/uploads/2010/04/CIMG1461_thumb.jpg</item>
+        <item>http://www.tu.ro/i/cado/o/ceas-kerala-trance-white-led-1166.jpg</item>
+        <item>http://images.fineartamerica.com/images-medium-large/deep-trance-scott-piers.jpg</item>
+        <item>http://s58.radikal.ru/i160/1003/2d/ec1624a9dd6a.jpg</item>
+        <item>http://www.kirod.com/wp-content/uploads/mvbthumbs/img_32_free-trance-tracks-from-audioswap.jpg</item>
+        <item>http://www.dragonartz.net/wp-content/uploads/2009/03/vector-trance-background-01-by-dragonart.jpg</item>
+        <item>http://www.aplacetolovedogs.com/wp-content/uploads/in-a-trance.jpg</item>
+        <item>http://trancem.ru/img/va/trance_4ever_2011.jpg</item>
+        <item>http://www.arminvanbuuren.org/wp-content/gallery/trance-energy-2009-utrecht-galeria/trance_energy_34.jpg</item>
+        <item>http://i174.photobucket.com/albums/w96/DJ_Strike/Trance.jpg</item>
+        <item>http://weloveatrance.com/wp-content/uploads/2010/12/trancetop1000.jpg</item>
+        <item>http://cdn2.staztic.com/screenshots/trance-13-2.jpg</item>
+        <item>http://fc05.deviantart.net/fs70/f/2010/264/e/2/pink_cyber_trance_by_golden_x_darkness-d2z7iog.png</item>
+        <item>http://static.desktopnexus.com/thumbnails/99822-bigthumbnail.jpg</item>
+        <item>http://www.artistserver.com/m4/21824/16322/media/18993.jpg</item>
+        <item>http://1.bp.blogspot.com/_xDao__Bde_4/TRtBJmUV_KI/AAAAAAAANnw/ISzXGf9hArU/s400/1293618312_trance_maniacs_party__trancefer_wave_42.jpg</item>
+        <item>http://v1.studenten.net/graphics/content/pictures/7-4-2010-16-50-trance_crowd_450.jpg</item>
+        <item>http://www.feelworldevent.com/wp-content/uploads/2010/06/Trance-Energy-Apr-2010-1.jpg</item>
+        <item>http://www.dudziak.com/pictures/fractals/trance_500.jpg</item>
+        <item>http://www.mkirste.de/page/serien/trance-energy/trance_energy08_33.jpg</item>
+    </string-array>
+    <string-array name="light_images">
+        <item>http://tabletpcssource.com/wp-content/uploads/2011/05/android-logo.png</item>
+        <item>http://simpozia.com/pages/images/stories/windows-icon.png</item>
+        <item>https://si0.twimg.com/profile_images/1135218951/gmail_profile_icon3_normal.png</item>
+        <item>http://www.krify.net/wp-content/uploads/2011/09/Macromedia_Flash_dock_icon.png</item>
+        <item>http://radiotray.sourceforge.net/radio.png</item>
+        <item>http://www.bandwidthblog.com/wp-content/uploads/2011/11/twitter-logo.png</item>
+        <item>http://weloveicons.s3.amazonaws.com/icons/100907_itunes1.png</item>
+        <item>http://weloveicons.s3.amazonaws.com/icons/100929_applications.png</item>
+        <item>http://t2.gstatic.com/images?q=tbn:ANd9GcTJixLIo_zlOPOILuxNWc5evK333pZCH8rugaTtv3SZSfiI39T0-3vWYQ</item>
+        <item>http://www.idyllicmusic.com/index_files/get_apple-iphone.png</item>
+        <item>http://www.frenchrevolutionfood.com/wp-content/uploads/2009/04/Twitter-Bird.png</item>
+        <item>http://images-3.findicons.com/files/icons/820/simply_google/128/google_earth.png</item>
+        <item>http://images-2.findicons.com/files/icons/820/simply_google/128/google_desktop.png</item>
+        <item>http://3.bp.blogspot.com/-ka5MiRGJ_S4/TdD9OoF6bmI/AAAAAAAAE8k/7ydKtptUtSg/s1600/Google_Sky%2BMaps_Android.png</item>
+        <item>http://www.desiredsoft.com/images/icon_webhosting.png</item>
+        <item>http://goodereader.com/apps/wp-content/uploads/downloads/thumbnails/2012/01/hi-256-0-99dda8c730196ab93c67f0659d5b8489abdeb977.png</item>
+        <item>http://1.bp.blogspot.com/-mlaJ4p_3rBU/TdD9OWxN8II/AAAAAAAAE8U/xyynWwr3_4Q/s1600/antivitus_free.png</item>
+        <item>http://cdn3.iconfinder.com/data/icons/transformers/computer.png</item>
+        <item>http://cdn.geekwire.com/wp-content/uploads/2011/04/firefox.png?7794fe</item>
+        <item>https://ssl.gstatic.com/android/market/com.rovio.angrybirdsseasons/hi-256-9-347dae230614238a639d21508ae492302340b2ba</item>
+        <item>http://androidblaze.com/wp-content/uploads/2011/12/tablet-pc-256x256.jpg</item>
+        <item>http://www.theblaze.com/wp-content/uploads/2011/08/Apple.png</item>
+        <item>http://1.bp.blogspot.com/-y-HQwQ4Kuu0/TdD9_iKIY7I/AAAAAAAAE88/3G4xiclDZD0/s1600/Twitter_Android.png</item>
+        <item>http://3.bp.blogspot.com/-nAf4IMJGpc8/TdD9OGNUHHI/AAAAAAAAE8E/VM9yU_lIgZ4/s1600/Adobe%2BReader_Android.png</item>
+        <item>http://cdn.geekwire.com/wp-content/uploads/2011/05/oovoo-android.png?7794fe</item>
+        <item>http://images-2.findicons.com/files/icons/1781/90_purple/256/android.png</item>
+        <item>http://icons.iconarchive.com/icons/kocco/ndroid/128/android-market-2-icon.png</item>
+        <item>http://images-5.findicons.com/files/icons/1782/classic_blue/256/classic_blue_android.png</item>
+        <item>http://thecustomizewindows.com/wp-content/uploads/2011/11/Nicest-Android-Live-Wallpapers.png</item>
+        <item>http://c.wrzuta.pl/wm16596/a32f1a47002ab3a949afeb4f</item>
+        <item>http://www.itsquix.com/images/buttons/myspace_button.png</item>
+        <item>http://macprovid.vo.llnwd.net/o43/hub/media/1090/6882/01_headline_Muse.jpg</item>
+        <item>http://bit.ly/soBiXr</item>
+        <item>http://bit.ly/corruptedLink</item>
+    </string-array>
+
+</resources>

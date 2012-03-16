@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg" >
+
+        <bigant.monche.view.components.HandleViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <ImageButton
+            android:id="@+id/meButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:src="@drawable/me_button" />
+
+        <ImageButton
+            android:id="@+id/twitterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/meButton"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/meButton"
+            android:background="@null"
+            android:src="@drawable/twitter_button" />
+
+        <ImageButton
+            android:id="@+id/gButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/twitterButton"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/twitterButton"
+            android:background="@null"
+            android:src="@drawable/g_button" />
+
+        <ImageButton
+            android:id="@+id/faceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/gButton"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/gButton"
+            android:background="@null"
+            android:src="@drawable/face_button" />
+
+        <ImageButton
+            android:id="@+id/likeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/faceButton"
+            android:background="@null"
+            android:src="@drawable/like_button" />
+
+        <FrameLayout
+            android:id="@+id/flagLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp" >
+        </FrameLayout>
+
+      <ImageButton
+            android:id="@+id/zoomInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/flagLayout"
+            android:background="@null"
+            android:src="@drawable/zoom_in_button" android:layout_marginRight="10dp" android:layout_alignParentBottom="true" android:layout_marginBottom="60dp"/>
+
+        <ImageButton
+            android:id="@+id/zoomOutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/flagLayout"
+            android:background="@null"
+            android:src="@drawable/zoom_out_button" android:layout_marginLeft="10dp" android:layout_alignParentBottom="true" android:layout_marginBottom="60dp"/>
+
+    </RelativeLayout>
+
+</merge><!--
+<ImageButton
+	    android:id="@+id/likeButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/like_button" android:background="@null" android:layout_gravity="bottom|left" android:layout_marginBottom="5dip" android:layout_marginLeft="5dip"/>
+
+	<ImageButton
+	    android:id="@+id/faceButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/face_button" android:background="@null" android:layout_gravity="bottom|right" android:layout_marginBottom="5dip" android:layout_marginRight="150dip"/>
+
+	<ImageButton
+	    android:id="@+id/gButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/g_button" android:background="@null" android:layout_gravity="bottom|right" android:layout_marginBottom="5dip" android:layout_marginRight="105dip" android:cropToPadding="false"/>
+
+	<ImageButton
+	    android:id="@+id/twitterButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/twitter_button" android:background="@null" android:layout_gravity="bottom|right" android:layout_marginBottom="5dip" android:layout_marginRight="60dip"/>
+
+	<ImageButton
+	    android:id="@+id/meButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/me_button" android:background="@null" android:layout_gravity="bottom|right" android:layout_marginBottom="5dip" android:layout_marginRight="15dip"/>
+<TableLayout
+	    android:id="@+id/tableLayout1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/zoomOutButton"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="70dp" android:layout_alignParentBottom="true">
+
+	    <TableRow
+	        android:id="@+id/tableRow1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	        
+	        <ImageButton
+			    android:id="@+id/zoomInButton"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			   	android:layout_marginRight="10dp"
+			    android:background="@null"
+			    android:src="@drawable/zoom_in_button" />
+	        <ImageButton
+			    android:id="@+id/zoomOutButton"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignLeft="@+id/faceButton"
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="10dp"
+			    android:background="@null"
+			    android:src="@drawable/zoom_out_button" />
+	        
+	    </TableRow>
+	</TableLayout>
+-->
+

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/galleryLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <bigant.monche.view.components.HandleViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="44dp" >
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/bottomView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_bottom"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitCenter"
+            android:src="@null" />
+
+        <ImageButton
+            android:id="@+id/homeButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/frameLayout1"
+            android:layout_alignTop="@+id/bottomView1"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="5dip"
+            android:background="@null"
+            android:src="@drawable/home_button" />
+
+        <ImageButton
+            android:id="@+id/loginButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/frameLayout1"
+            android:layout_alignTop="@+id/bottomView1"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="5dip"
+            android:background="@null"
+            android:src="@drawable/login_button" />
+
+        <ImageButton
+            android:id="@+id/shareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomView1"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dip"
+            android:background="@null"
+            android:src="@drawable/share_button" />
+
+        <ImageView
+            android:id="@+id/bgNotiView"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_above="@+id/bottomView1"
+            android:layout_alignLeft="@+id/likeButton"
+            android:layout_marginBottom="-10dip"
+            android:layout_marginLeft="-5dip"
+            android:background="@drawable/noti" />
+
+        <TextView
+            android:id="@+id/numLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/likeButton"
+            android:layout_marginLeft="2dip"
+            android:layout_toRightOf="@+id/likeButton"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/solid_white" />
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/shareLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/shareButton"
+            android:layout_alignLeft="@+id/homeButton1"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="10dip"
+           >
+
+            <ImageView
+                android:id="@+id/bgNotiView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              
+                android:background="@drawable/bg_share" />
+
+            <ImageButton
+                android:id="@+id/meButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="13dip"
+                android:layout_marginTop="5dip"
+                android:background="@null"
+                android:src="@drawable/me_button" />
+
+            <ImageButton
+                android:id="@+id/twitterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="13dip"
+                android:layout_marginTop="5dip"
+                android:layout_toLeftOf="@+id/meButton"
+                android:background="@null"
+                android:src="@drawable/twitter_button" />
+
+            <ImageButton
+                android:id="@+id/gButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="13dip"
+                android:layout_marginTop="5dip"
+                android:layout_toLeftOf="@+id/twitterButton"
+                android:background="@null"
+                android:src="@drawable/g_button" />
+
+            <ImageButton
+                android:id="@+id/faceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="13dip"
+                android:layout_marginTop="5dip"
+                android:layout_toLeftOf="@+id/gButton"
+                android:background="@null"
+                android:src="@drawable/face_button" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/likeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/shareButton"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:background="@null"
+            android:src="@drawable/like_button" />
+    </RelativeLayout>
+
+</RelativeLayout>

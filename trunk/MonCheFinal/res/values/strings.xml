@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <!--	
+ 	PureMVC Java Currency Converter for Android
+	Copyright (C) 2010  Frederic Saunier - www.tekool.net
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+	
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+	
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+   	<!-- CurrencyConverter Application -->
+    <string name="app_name">Doremon Che</string>
+    <string name="app_version_name">1.0</string>
+    <string name="app_version_code">1</string>
+    <string name="app_author">BigAnt</string>
+    
+    <!-- Android Menu -->
+	<string name="options_menu_refresh_item">Refresh</string>
+	<string name="options_menu_about_item">About</string>
+	<string name="options_menu_preferences_item">Preferences</string>    
+    
+   	<!-- Converter Activity -->
+    <string name="converter_activity_name">CurrencyConverter</string>
+   	<string name="converter_spinner_from_label">From:</string>
+   	<string name="converter_spinner_from_prompt">Choose the currency from which to convert</string>
+   	<string name="converter_spinner_to_label">To:</string>
+   	<string name="converter_spinner_to_prompt">Choose the currency to which to convert</string>
+   	
+	   	<!-- Loading Screen -->
+	   	<string name="loading_text">Loading…</string>
+	   	<string name="loading_failed_text">Loading failed</string>
+   	
+   	<!-- Preferences Activity -->
+    <string name="preferences_activity_name">CurrencyConverter Preferences</string>
+   	<string name="preferences_category_title">Currencies</string>
+   	
+   		<!--  Currencies update frequency -->
+ 	  	<string name="preferences_update_frequency_key">update_frequency</string>
+ 	  	<string name="preferences_update_frequency_title">Update Frequency</string>
+ 	  	<string name="preferences_update_frequency_dialog_title">Choose the method to update currencies</string>
+ 	  	<string name="preferences_update_frequency_automatic">Automatic</string>
+ 	  	<string name="preferences_update_frequency_manual">Manual</string>
+    	
+   		<string name="preferences_last_updated_label">Currencies data last updated:</string>
+  	 	<string name="preferences_update_button_label">Update Now!</string>
+   	
+   	<!-- About Activity -->
+    <string name="about_activity_name">About CurrencyConverter</string>
+    <string name="about_app_name">CurrencyConverter v1.0</string>
+    <string name="about_app_author"><a href="http://www.tekool.net/">www.tekool.net</a></string>
+    <string name="about_text">
+	    <![CDATA[<p align="justify">PureMVC Java Currency Converter for Android
+		Copyright (C) 2010  Frederic Saunier - www.tekool.net
+		This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+		<br>
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+		<br>
+		You should have received a copy of the GNU General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/></p>
+		]]>
+	</string>
+	
+    
+    <!-- Currency Service -->
+   	<string name="user_agent_template">currency</string>
+	<string name="gateway_uri">http://www.tekool.net/json.php</string>
+	<string name="service">currency</string>
+	<string name="conversion_error_bad_input_value">Error while converting the value, <quote><xliff:g id="text">%0$s</xliff:g></quote> is not a number</string>
+	<string name="next">Next</string>
+	
+	
+	<!-- Login activity -->
+    <string name="showDlg">show dialog</string>
+    <string name="user">Username</string>
+    <string name="login">Log In</string>
+    <string name="pass">Password</string>
+    <string name="saveinfo">save account</string>
+    <string name="SignIn">Sign up</string>
+    <string name="confirmPass">Confirm Password</string>
+    <string name="email">Email</string>
+	
+	</resources>
